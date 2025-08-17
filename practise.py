@@ -17,13 +17,11 @@ def square(x):
 
 print(square(2))
 
-for n in range(7+1) :
+for n in range(7) :
     star = ""
     for e in range(n+1):
         star = star +'*'
     print(star)
-    if n ==7:
-        break
 def multiplier(func):
     return lambda k: k * func
 
@@ -35,5 +33,17 @@ def root(r):
     return lambda y: float(y ** (1/r))
 
 root_type = root(2)
-print(root_type(0.6))
+print(root_type(4))
+#when n =0,start = 1,n=1 star = 2
+def percentage_converter(value):
+    return value/100
+
+def percent(func,a):
+    c= func(a)
+    return c * 100
+
+print(percent(percentage_converter,100))
+
+
+
 
