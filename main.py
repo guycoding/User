@@ -14,7 +14,7 @@ SECRET_KEY = secrets.token_urlsafe(32)  # Generate a random secret key
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
-# In-memory database (replace with real DB in production)
+
 test_user = {
         "name": "Test User",
         "last_name": "Lastname",
